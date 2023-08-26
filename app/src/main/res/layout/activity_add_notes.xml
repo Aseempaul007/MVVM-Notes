@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notes_background"
+    android:orientation="vertical"
+    tools:context=".ui.addnotes.AddNotesActivity">
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/imageView_save"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@color/Color_fab"
+        android:padding="10dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_check_circle_outline_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/imageView_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@color/Color_fab"
+        android:padding="10dp"
+        android:text="Discard"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Note title"
+        android:paddingStart="8dp"
+        android:singleLine="true"
+        android:textColor="#E4FFFFFF"
+        android:textColorHint="#C3FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_cancel" />
+
+
+    <EditText
+        android:id="@+id/editText_notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="top"
+        android:hint="Note description"
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:paddingStart="8dp"
+        android:singleLine="false"
+        android:textColor="#E4FFFFFF"
+        android:textColorHint="#C3FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
