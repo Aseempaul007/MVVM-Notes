@@ -1,4 +1,4 @@
-package com.example.notes.ui.addnotes
+package com.example.notes.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.example.notes.data.local.entity.Note
@@ -7,12 +7,15 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class AddNotesViewmodel @Inject constructor(private val notesRepository: NoteRepository): ViewModel() {
+class NotesViewModel @Inject constructor(private val noteRepository: NoteRepository):ViewModel() {
+
 
     suspend fun addNote(note: Note){
-        notesRepository.addNote(note)
+        noteRepository.addNote(note)
     }
+
     suspend fun showAllNotes(): List<Note>{
-        return notesRepository.showAllNotes()
+        return noteRepository.showAllNotes()
     }
+
 }

@@ -1,16 +1,12 @@
-package com.example.notes.ui.addnotes
+package com.example.notes.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.activity.viewModels
 import androidx.lifecycle.ViewModelProvider
-import com.example.notes.R
 import com.example.notes.data.local.entity.Note
 import com.example.notes.databinding.ActivityAddNotesBinding
-import com.example.notes.util.Constants.MYTAG
+import com.example.notes.viewmodel.AddNotesViewmodel
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.scopes.ActivityScoped
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

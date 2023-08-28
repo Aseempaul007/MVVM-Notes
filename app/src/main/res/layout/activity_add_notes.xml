@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/notes_background"
     android:orientation="vertical"
-    tools:context=".ui.addnotes.AddNotesActivity">
+    tools:context=".view.AddNotesActivity">
 
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
