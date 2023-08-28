@@ -12,7 +12,6 @@ class AddNotesViewmodel @Inject constructor(private val notesRepository: NoteRep
     suspend fun addNote(note: Note){
         notesRepository.addNote(note)
     }
-
     suspend fun showAllNotes(): List<Note>{
         return notesRepository.showAllNotes()
     }

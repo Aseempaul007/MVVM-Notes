@@ -9,14 +9,13 @@ import com.example.notes.data.local.entity.Note
 
 @Dao
 interface NoteDao {
-
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun addNote(note: Note)
 
     @Delete
     suspend fun deleteNote(note: Note)
 
-    @Query("SELECT * FROM NOTE")
+    @Query("SELECT * FROM note")
     suspend fun showAllNotes(): List<Note>
 
 }

@@ -10,7 +10,5 @@ import com.example.notes.data.local.entity.Note
     version = 1
 )
 abstract class NoteDb: RoomDatabase() {
-
     abstract fun noteDao(): NoteDao
-
 }

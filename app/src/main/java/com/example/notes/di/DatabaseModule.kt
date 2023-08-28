@@ -28,6 +28,7 @@ class DatabaseModule {
     }
 
     @Provides
+    @Singleton
     fun getNotesDao(noteDb: NoteDb): NoteDao{
         return noteDb.noteDao()
     }

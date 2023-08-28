@@ -30,14 +30,9 @@ class AddNotesActivity : AppCompatActivity() {
         addNotesViewmodel= ViewModelProvider(this).get(AddNotesViewmodel::class.java)
 
         addNotesBinding.imageViewSave.setOnClickListener {
-            val note = Note(
-                i++,
-                addNotesBinding.editTextTitle.text.toString(),
-                addNotesBinding.editTextNotes.text.toString()
-            )
             CoroutineScope(Dispatchers.IO).launch {
-                addNotesViewmodel.addNote(note)
-                Log.d(MYTAG,addNotesViewmodel.showAllNotes().toString())
+                addNotesViewmodel.addNote(Note(1,"Aseem","Paul"))
+                //Log.d(MYTAG,addNotesViewmodel.showAllNotes().toString())
             }
         }
     }
