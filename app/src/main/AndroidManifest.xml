@@ -14,10 +14,10 @@
         android:theme="@style/Theme.Notes"
         tools:targetApi="31">
         <activity
-            android:name=".view.AddNotesActivity"
+            android:name=".view.activity.AddNotesActivity"
             android:exported="false" />
         <activity
-            android:name=".view.NotesActivity"
+            android:name=".view.activity.NotesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
